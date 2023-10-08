@@ -1,0 +1,98 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+ html,
+ body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .container {
+    width: 450px;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas:
+       'display display '
+       'dgts  math';
+    grid-template-rows: 65px 310px;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+ }
+ 
+ .digit-btns {
+    grid-area: dgts;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+ }
+ 
+ .math-btns {
+    grid-area: math;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+ }
+ 
+ .display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    grid-area: display;
+    border: 1px black solid;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;    
+    padding: 0 5px 5px 0;
+    font-size: 2rem;
+    border-radius: 5px;
+ }
+ 
+ .digit-btns button {
+    border: 0px;
+    border-radius: 7px;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    background-color:snow;
+ }
+ 
+ .digit-btns button:hover {
+    background-color: rgba(84, 147, 195, 0.75);
+ }
+ 
+ .math-btns button {
+    border: 0px;
+    border-radius: 7px;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    background-color: gold;
+ }
+ 
+ #clear {
+    transition: all 0.4s ease;
+    color: white;
+    background: #0575E6;  /* fallback for old browsers */   
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ .math-btns button:hover {
+    background-color: rgba(84, 147, 195, 0.75);
+ }
+ 
+ #clear:hover{
+    transform: scale(1.1);
+ }
+ button:active {
+    transform: scale(1.05);
+ }

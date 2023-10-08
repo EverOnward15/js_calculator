@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Simple Calculator</title>
+   </head>
+   <body>
+      <h1>Calculator</h1>
+      <div class="container">
+         <div class="digit-btns">
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="." id="decimal">.</button>
+            <button value="0">0</button>
+            <button value="" id="delete">⌦</button>
+         </div>
+         <div class="math-btns">
+            <button id="add" value="+">+</button>
+            <button id="sub" value="-">-</button>
+            <button id="mult" value="*">*</button>
+            <button id="divide" value="/">/</button>
+            <button id="equal" value="=">=</button>
+            <button id="clear" value="ac">AC</button>
+         </div>
+
+         <div id="display" class="display">0</div>
+      </div>
+      <div>
+         <h2>Keyboard shortcuts</h1>
+         <p>"c" for AC(All Clear)</p>
+         <p>"=" for Equal (Display Result)</p>
+      </div>
+   </body>
+   <script src="script.js"></script>
+</html>
